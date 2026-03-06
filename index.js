@@ -115,10 +115,13 @@ class HomeCollection extends Collection {
         return results;
     }
 
-    makeURL() {
-        let lang = this.getSetting('language');
-        return this.url.replace('{0}', lang);
-    }
+  makeURL() {
+    let lang = "en"; // or whatever language you want
+    return this.url
+        .replace('{0}', lang)
+        .replace('{1}', glib.Encoder.urlEncode(this.key));
+}
+
 
     reload(_, cb) {
         this.fetch(this.makeURL()).then((results)=>{
