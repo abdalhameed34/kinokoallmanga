@@ -2,6 +2,7 @@
     "name": "all manga",
  
     "url": "https://allmanga.to/",
+    "icon": "https://github.com/abdalhameed34/kinokoallmanga/blob/main/avatar-w.png",
     "index": "index.js",
     "book": "book.js",
     "chapter": "chapter.js",
