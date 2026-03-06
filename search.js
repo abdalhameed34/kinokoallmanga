@@ -8,8 +8,12 @@ class SearchCollection extends ParsedCollection {
     }
 
     makeURL() {
-        let lang = this.getSetting('language');
-        return this.url.replace('{0}', lang).replace('{1}', glib.Encoder.urlEncode(this.key));
+    let lang = "en"; // or whatever language you want
+    return this.url
+        .replace('{0}', lang)
+        .replace('{1}', glib.Encoder.urlEncode(this.key));
+}
+
     }
 
     reload(data, cb) {
