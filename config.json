@@ -1,0 +1,42 @@
+{
+    "name": "all manga",
+ 
+    "url": "https://allmanga.to/",
+    "index": "index.js",
+    "book": "book.js",
+    "chapter": "chapter.js",
+    "search": {
+        "src": "search.js",
+        "data": {
+            "url": "https://allmanga.to/search-manga?cty=ALL"
+        }
+    },
+    "settings": "settings.js",
+    "categories": [
+        {
+            "title": "Home",
+            "id": "home",
+            "url": "https://allmanga.to/manga?cty=ALL"
+        },
+        {
+            "title": "Latest Release",
+            "id": "last_release",
+            "url": "https://allmanga.to/search-manga?cty=ALL"
+        },
+        {
+            "title": "Manga Directory",
+            "id": "manga_directory",
+            "url": "https://allmanga.to/search-manga?query=&sortBy=Name_ASC"
+        },
+        {
+            "title": "Hot Manga",
+            "id": "hot_manga",
+            "url": "https://allmanga.to/search-manga?cty=ALL&sortBy=Top&sortDirection=-1"
+        },
+        {
+            "title": "New Manga",
+            "id": "new_manga",
+            "url": "https://allmanga.to/search-manga?season=Winter&year=2026"
+        }
+    ]
+}
